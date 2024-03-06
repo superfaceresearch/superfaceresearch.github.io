@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Performant and Pragmatic Face Reenactment with Supervisor-Student Framework">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Performant and Pragmatic Face Reenactment with Supervisor-Student Framework</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column has-text-centered">
+        <h1 class="title is-1 publication-title">
+          Performant and Pragmatic Face Reenactment with Supervisor-Student Framework </h1>
+        <div class="is-size-5 publication-authors">
+          <span class="author-block">
+            Anonymous Authors</span>
+        </div>
+      </div>  
+    </div>
+    
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Talking face generation technology creates talking videos from arbitrary image and motion signal, with the "arbitrary" offering ease of use but also introducing challenges in practical applications. Existing methods work well with standard inputs but suffer serious performance degradation with intricate real-world ones. Moreover, efficiency is also an important concern in deployment. To comprehensively address these issues, we introduce <b>Superface</b>, a teacher-student framework that balances performance, robustness, cost, and functionality. We first propose a simple but effective teacher model capable of handling inputs of varying qualities to generate photorealistic results. Building on this, we devise an efficient distillation strategy to acquire a student model that maintains quality with significantly reduced computational load. Our experiments validate that Superface significantly surpasses existing methods in image quality, motion accuracy, and robustness, while concurrently reducing flops by two orders of magnitude with the student model. Superface can be driven by both video and audio and allows for localized facial attributes editing.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Overall Framework -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overall Framework</h2>
+        <div class="content has-text-justified">
+          <p>
+            The overall framework of SuperFace is demonstrated as follows:
+          </p>
+          <p>
+            <!-- <img src="./static/images/overall.png" -->
+      <!-- class="interpolation-image" -->
+      <!-- alt="The overall framework of SuperFace."/> -->
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Overall Framework -->
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-2">Comparison with Baselines</h2>
+
+        <h2 class="title is-3"><b>Teacher</b> Model for <b>Same-ID</b> Generation</h2>
+        <video id="main-compare-video"
+                controls
+                muted
+                preload
+                playsinline
+                width="90%">
+          <source src="./static/videos/dummy.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3"><b>Teacher</b> Model for <b>Cross-ID</b> Generation</h2>
+        <video id="main-compare-video"
+                controls
+                muted
+                preload
+                playsinline
+                width="90%">
+          <source src="./static/videos/dummy.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3"><b>Student</b> Model for Generation</h2>
+        <video id="main-compare-video"
+                controls
+                muted
+                preload
+                playsinline
+                width="90%">
+          <source src="./static/videos/dummy.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-2">Case Study Demos</h2>
+
+        <h2 class="title is-3">Robustness</h2>
+        <video id="main-compare-video"
+                controls
+                muted
+                preload
+                playsinline
+                width="90%">
+          <source src="./static/videos/dummy.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Large Pose</h2>
+        <video id="main-compare-video"
+                controls
+                muted
+                preload
+                playsinline
+                width="90%">
+          <source src="./static/videos/dummy.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Editability</h2>
+        <video id="main-compare-video"
+                controls
+                muted
+                preload
+                playsinline
+                width="90%">
+          <source src="./static/videos/dummy.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+
+</body>
+</html>
