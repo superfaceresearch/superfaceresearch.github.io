@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Performant and Pragmatic Face Reenactment with Supervisor-Student Framework">
+        content="Superior and Pragmatic Talking Face Generation with Teacher-Student Framework">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Performant and Pragmatic Face Reenactment with Supervisor-Student Framework</title>
+  <title>Superior and Pragmatic Talking Face Generation with Teacher-Student Framework</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -46,7 +46,7 @@
     <div class="columns is-centered">
       <div class="column has-text-centered">
         <h1 class="title is-1 publication-title">
-          Performant and Pragmatic Face Reenactment with Supervisor-Student Framework </h1>
+          Superior and Pragmatic Talking Face Generation with Teacher-Student Framework</h1>
         <div class="is-size-5 publication-authors">
           <span class="author-block">
             Anonymous Authors</span>
@@ -62,7 +62,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Talking face generation technology creates talking videos from arbitrary image and motion signal, with the "arbitrary" offering ease of use but also introducing challenges in practical applications. Existing methods work well with standard inputs but suffer serious performance degradation with intricate real-world ones. Moreover, efficiency is also an important concern in deployment. To comprehensively address these issues, we introduce <b>Superface</b>, a teacher-student framework that balances performance, robustness, cost, and functionality. We first propose a simple but effective teacher model capable of handling inputs of varying qualities to generate photorealistic results. Building on this, we devise an efficient distillation strategy to acquire a student model that maintains quality with significantly reduced computational load. Our experiments validate that Superface significantly surpasses existing methods in image quality, motion accuracy, and robustness, while concurrently reducing flops by two orders of magnitude with the student model. Superface can be driven by both video and audio and allows for localized facial attributes editing.
+            Talking face generation technology creates talking videos from arbitrary appearance and motion signal, with the "arbitrary" offering ease of use but also introducing challenges in practical applications. Existing methods work well with standard inputs but suffer serious performance degradation with intricate real-world ones. Moreover, efficiency is also an important concern in deployment. To comprehensively address these issues, we introduce SuperFace, a teacher-student framework that balances quality, robustness, cost and editability. We first propose a simple but effective teacher model capable of handling inputs of varying qualities to generate high-quality results. Building on this, we devise an efficient distillation strategy to acquire an identity-specific student model that maintains quality with significantly reduced computational load. Our experiments validate that SuperFace offers a more comprehensive solution than existing methods for the four mentioned objectives, especially in reducing FLOPs by 99\% with the student model. SuperFace can be driven by both video and audio and allows for localized facial attributes editing.
           </p>
         </div>
       </div>
@@ -78,9 +78,11 @@
             The overall framework of SuperFace is demonstrated as follows:
           </p>
           <p>
-            <!-- <img src="./static/images/overall.png" -->
-      <!-- class="interpolation-image" -->
-      <!-- alt="The overall framework of SuperFace."/> -->
+            <img 
+              src="./static/images/overall.png"
+              class="interpolation-image"
+              alt="The overall framework of SuperFace."
+            />
           </p>
         </div>
       </div>
